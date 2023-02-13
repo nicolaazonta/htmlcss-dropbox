@@ -1,0 +1,78 @@
+/* #region----------commons */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --cl-bck_navbar: #;
+    --cl-bck_jumbo: #;
+    --cl-bck_section_a: #;
+    --cl-bck_section_b: #;
+    --cl-bck_footer: #;
+    --cl-bck_team_1: #;
+    --cl-bck_team_1: #;
+    --cl-bck_team_1: #;
+    --cl-bck_team_1: #;
+}
+/* #endregion----------*/
+
+
+
+/* #region----------utilities*/
+.d_flex{
+    display: flex;
+}
+.justify_cent{
+    justify-content: center;
+}
+.justify_betw{
+    justify-content: space-between;
+}
+.justify_arou{
+    justify-content: space-around;
+}
+.align_it_center{
+    align-items: center;
+}
+.align_co_center{
+    align-content: center;
+}
+.flex_wr{
+    flex-wrap: wrap;
+}
+
+/* #endregion----------*/
+
+
+
+/* #region----------navbar*/
+
+/* #endregion----------*/
+
+
+
+/* #region----------jumbotron*/
+
+/* #endregion----------*/
+
+
+
+/* #region----------footer*/
+
+/* #endregion----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
