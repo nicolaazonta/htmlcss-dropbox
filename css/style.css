@@ -74,8 +74,12 @@
     color: var(--cl-light);
     padding: .3rem .6rem;
 }
-.container_{
-    width: 70%;
+.container_65{
+    width: 65%;
+    margin: auto;
+}
+.container_50{
+    width: 50%;
     margin: auto;
 }
 /* #endregion----------*/
@@ -88,7 +92,7 @@
 }
 #navbar{
     background-color: var(--cl-light);
-    height: 3.8rem;
+    height: 4rem;
     width: 100%;
     position: sticky;
 }
@@ -108,10 +112,31 @@
 
 
 /* #region----------main-jumbotron*/
-#jumbo{
-    height: 26rem;
+.jumbo_section{
+    height: 36rem;
     background-color: var(--cl-bck_jumbo);
 }
+#jumbo{
+    height: 23rem;
+    padding-top: 4rem;
+}
+#jumbo h1{
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+
+}
+.text_image{
+    height: 100%;
+}
+.text{
+    width: 40%;
+    max-height: 100%;
+}
+.image{
+    flex-grow: 1;
+}
+
 /* #endregion----------*/
 
 
