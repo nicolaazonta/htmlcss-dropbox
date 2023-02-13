@@ -7,15 +7,20 @@
 }
 
 :root{
-    --cl-bck_navbar: #;
-    --cl-bck_jumbo: #;
-    --cl-bck_section_a: #;
-    --cl-bck_section_b: #;
-    --cl-bck_footer: #;
-    --cl-bck_team_1: #;
-    --cl-bck_team_1: #;
-    --cl-bck_team_1: #;
-    --cl-bck_team_1: #;
+    --cl-light: #FFFFFF;
+    --cl-dark: #000000;
+    --cl-bck_jumbo: #B4D0E7;
+    --cl-bck_CTA: #0061FF;
+    --cl-alternative_txt: #61082B;
+    --cl-bck_teams_Designit: #F5F5F5;
+    --cl-bck__left_team_1: #A2D39B;
+    --cl-bck__left_team_2: #61082B;
+    --cl-bck__left_team_3: #0093CE;
+    --cl-bck__left_team_4: #FF1C1C;
+    --cl-bck__right_team_1: #D5001F;
+    --cl-bck__right_team_2: #B4D0E7;
+    --cl-bck__right_team_3: #0D2481;
+    --cl-bck__right_team_4: #FFD830;
 }
 /* #endregion----------*/
 
@@ -43,19 +48,70 @@
 .flex_wr{
     flex-wrap: wrap;
 }
+.justify_end{
+    justify-content: flex-end;
+}
+.pad_1r{
+    padding: 1rem;
+}
+.pad_2r{
+    padding: 2rem;
+}
+.pad_5r{
+    padding: 5rem;
+}
+.margin_r{
+    margin-right: 1rem;
+}
+.dashed{
+    border: dashed 2px blue;
+}
+.position_rel{
+    position: relative;
+}
+.cta{
+    background-color: var(--cl-bck_CTA);
+    color: var(--cl-light);
+    padding: .3rem .6rem;
+}
+.container_{
+    width: 70%;
+    margin: auto;
+}
+/* #endregion----------*/
+
+
+
+/* #region----------header-navbar*/
+#app_header{
+    font-size: .8rem;
+}
+#navbar{
+    background-color: var(--cl-light);
+    height: 3.8rem;
+    width: 100%;
+    position: sticky;
+}
+#navbar p{
+    margin: 1rem;
+}
+
+#navbar .logo{
+    height: 1.2rem;
+}
+.nav_left, .nav_right{
+    width: 40%;
+}
 
 /* #endregion----------*/
 
 
 
-/* #region----------navbar*/
-
-/* #endregion----------*/
-
-
-
-/* #region----------jumbotron*/
-
+/* #region----------main-jumbotron*/
+#jumbo{
+    height: 26rem;
+    background-color: var(--cl-bck_jumbo);
+}
 /* #endregion----------*/
 
 
