@@ -51,6 +51,9 @@
 .justify_end{
     justify-content: flex-end;
 }
+.flex_clmn{
+    flex-direction: column;
+}
 .pad_1r{
     padding: 1rem;
 }
@@ -59,6 +62,12 @@
 }
 .pad_5r{
     padding: 5rem;
+}
+.pad_t2r{
+    padding-top: 2rem;
+}
+.pad_b5{
+    padding-bottom: 5rem;
 }
 .margin_r{
     margin-right: 1rem;
@@ -81,6 +90,12 @@
 .container_50{
     width: 50%;
     margin: auto;
+}
+.col_4{
+    width: calc(100% / 12 * 4);
+}
+.col_1{
+    width: 100%;
 }
 /* #endregion----------*/
 
@@ -127,11 +142,10 @@
 
 }
 .text_image{
-    height: 100%;
+    height: 19rem;
 }
 .text{
     width: 40%;
-    max-height: 100%;
 }
 .image{
     flex-grow: 1;
@@ -139,6 +153,61 @@
 
 /* #endregion----------*/
 
+
+/* #region----------business plans*/
+.business_plans>h2{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+#sections .check1,.check2{
+    width: 20rem;
+    height: 2rem;
+}
+/* #endregion----------*/
+
+
+/* #region----------card*/
+.card{
+    flex-direction: column;
+}
+.col_4 .card .card_header{
+    flex-basis: 2rem;
+    height: 100%;
+    background-color:#61082B;
+    text-align: center;
+}
+
+.col_4 .card .card_main{
+    flex-basis: 20rem;
+    height: 100%;
+    background-color: #A2D39B;
+}
+
+.col_4 .card .card_footer{
+    flex-basis: 15rem;
+    height: 100%;
+    background-color: #0093CE;
+}
+
+.col_1 .card .card_header{
+    flex-basis: 2rem;
+    height: 100%;
+    background-color:#61082B;
+}
+.col_1 .card .card_main{
+    flex-basis: 10rem;
+    height: 100%;
+    background-color: #A2D39B;
+}
+
+/* #endregion----------*/
+
+
+/* #region----------partner section*/
+.partner_section{
+    height: 20rem;
+}
+/* #endregion----------*/
 
 
 /* #region----------footer*/
