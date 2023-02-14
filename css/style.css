@@ -265,7 +265,17 @@
 
 /* #region----------footer*/
 #app_footer{
-    
+    min-height: 15rem;
+    background-color: lightsteelblue;
+}
+#app_footer .footer_col{
+    width: calc(100% / 5);
+    padding: 1rem;
+}
+#app_footer .footer_top{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 /* #endregion----------*/
 
