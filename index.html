@@ -14,7 +14,7 @@
 
 
     <header id="app_header" class="position_rel"><!-- header here -->
-        <nav id="navbar" class="d_flex justify_betw dashed"><!-- navbar here -->
+        <nav id="navbar" class="d_flex justify_betw"><!-- navbar here -->
             <div class="nav_left d_flex align_it_center pad_1r"><!-- left side of navbar -->
                 <img class="logo margin_r" src="./img/logo-small.png" alt="dropbox logo">
                 <p>Perchè Dropbox</p>
@@ -40,7 +40,7 @@
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="text_image d_flex">
                     <div class="text d_flex justify_betw flex_clmn">
-                        <p>Finalmente tutti i tuoi strumenti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cum qui natus porro enim distinctio commodi aut consectetur, molestiae cupiditate explicabo officia autem! Cum nisi eveniet fugit quasi accusamus quo incidunt dolorum. Delectus, ipsum doloribus! Impedit eligendi aliquid qui, mollitia tempora repellendus commodi amet. Ipsum pariatur ex magnam excepturi eum.</p>
+                        <p>Finalmente tutti i tuoi strumenti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cum qui natus porro enim distinctio commodi aut consectetur, molestiae cupiditate explicabo officia autem! Cum nisi eveniet fugit quasi accusamus quo incidunt dolorum. Delectus, ipsum doloribus! </p>
                         <div><p class="cta">Inizia la tua prova gratuita</p></div>
                         <p>Annulla in qualsiasi momento</p>
                         <i class="fa-solid fa-arrow-down"></i>  
@@ -55,36 +55,47 @@
         </section>
 
         <section id="sections">
-            <div class="business_plans container_50">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <div id="business_plans" class="container_50">
+                <h2>Trova il piano business che fa per te</h2>
                 <div class="check_boxes d_flex">
-                    <p class="check1 dashed"></p>
-                    <p class="check2 dashed"></p>
+                    <div class="box">
+                        <input type="checkbox">
+                        <label>Fatturazione mensile</label>
+                    </div>
+                    <div class="box">
+                        <input type="checkbox">
+                        <label>Fatturazione annuale</label>
+                    </div>
                 </div>
 
                 <div class="card_contain">
                     <div class="row justify_betw pad_t2r">
                         <div class="col_4">
                             <div class="card d_flex dashed">
-                                <div class="card_header d_flex justify_cent align_it_center dashed">Lorem.</div>
-                                <div class="card_main"></div>
-                                <div class="card_footer"></div>
+                                <div class="card_header d_flex justify_cent align_it_center">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Singolo</span>    
+                                </div>
+                                <div class="card_main">
+                                    <h3>Professional</h3>
+                                    <p class="price">€ 12.00</p>
+                                    <p>/mese</p>
+                                    <div class="users pad_t2r">
+                                        <i class="fa-solid fa-user"></i>
+                                        <p>1 Utente</p>
+                                    </div>
+                                    <div class="users">
+                                        <i class="fa-solid fa-folder"></i>
+                                        <p>5TB di spazio di archiviazione sicuro</p>
+                                    </div>
+                                    <div class="users">
+                                        <i class="fa-solid fa-share"></i>
+                                        <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col_4">
-                            <div class="card d_flex dashed">
-                                <div class="card_header d_flex justify_cent align_it_center dashed">Lorem.</div>
-                                <div class="card_main"></div>
-                                <div class="card_footer"></div>
-                            </div>
-                        </div>
-                        <div class="col_4">
-                            <div class="card d_flex dashed">
-                                <div class="card_header d_flex justify_cent align_it_center dashed">Lorem.</div>
-                                <div class="card_main"></div>
-                                <div class="card_footer"></div>
-                            </div>
-                        </div>                    
+                                       
                     </div>
                     <div class="row">
                         <div class="col_12 pad_b5">
