@@ -24,8 +24,6 @@
 }
 /* #endregion----------*/
 
-
-
 /* #region----------utilities*/
 .d_flex{
     display: flex;
@@ -93,13 +91,17 @@
 }
 .col_4{
     width: calc(100% / 12 * 4);
+    padding: .5rem;
 }
-.col_1{
+.col_12{
     width: 100%;
+    padding: .5rem;
+}
+.row{
+    flex-wrap: wrap;
+    display: flex;
 }
 /* #endregion----------*/
-
-
 
 /* #region----------header-navbar*/
 #app_header{
@@ -123,8 +125,6 @@
 }
 
 /* #endregion----------*/
-
-
 
 /* #region----------main-jumbotron*/
 .jumbo_section{
@@ -153,7 +153,6 @@
 
 /* #endregion----------*/
 
-
 /* #region----------business plans*/
 .business_plans>h2{
     padding-top: 5rem;
@@ -164,7 +163,6 @@
     height: 2rem;
 }
 /* #endregion----------*/
-
 
 /* #region----------card*/
 .card{
@@ -202,12 +200,76 @@
 
 /* #endregion----------*/
 
-
 /* #region----------partner section*/
-.partner_section{
+#partner_section{
+    height: 20rem;
+    background-color: lightcoral;
+}
+#partner_section div{
     height: 20rem;
 }
 /* #endregion----------*/
+
+/* #region----------operation section*/
+#operation_section{
+    background-color: lightgreen;
+    height: 35rem;
+}
+#operation_section div{
+    height: 10rem;
+}
+/* #endregion----------*/
+
+/* #region----------members*/
+#members{
+    background-color: lightseagreen;
+    max-height: 30rem;
+}
+
+.square_block{
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square{
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+
+/* #endregion----------*/
+
+/* #region----------call to action*/
+#call_to_action{
+    height: 10rem;
+    background-color: lightgoldenrodyellow;
+} 
+/* #endregion----------*/
+
+/* #region----------faq*/
+#faq{
+    max-height: 20rem;
+    background-color: lightgreen;
+} 
+#faq li{
+    padding: .5rem;
+    position: relative;
+}
+#faq h2{
+    padding: 2rem;
+}
+#faq li:first-child{
+    position: absolute;
+    left: 0;
+}
+#faq li:last-child{
+    position: absolute;
+    right: 0;
+}
+
+/* #endregion----------*/
+
 
 
 /* #region----------footer*/
