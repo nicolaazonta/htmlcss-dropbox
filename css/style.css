@@ -235,45 +235,80 @@
 .main_points .fa-check{
     color: #0061FF;
 }
-
-
-
-
 #orizontal_card .card{
-    height: 15rem;
+    min-height: 11rem;
     border: 1px solid var(--cl-bck__right_team_2);
     flex-direction: column;    
 }
-
-.col_12 .card .card_header{
-    flex-basis: 2rem;
-    height: 100%;
+.col_12 .card_header{
+    border-bottom: 1px solid var(--cl-bck__right_team_2);
 }
-.col_12 .card .card_main{
-    flex-basis: 10rem;
-    height: 100%;
+#orizontal_card .right_side{
+    width: 40%;
+}
+#orizontal_card .left_side,.right_side{
+    padding: 1.5rem;
+}
+.left_side :last-child{
+    padding-top: 2rem;
 }
 /* #endregion----------*/
 
 /* #region----------partner section*/
 #partner_section{
-    height: 20rem;
-    background-color: lightcoral;
+    min-height: 30rem;
 }
-#partner_section div{
-    height: 20rem;
+#partner_section img{
+    height: 25rem;
+}
+#partner_section .container_50{
+    padding-top: 7rem;
+}
+#partner_section .text{
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.cta_grey{
+    padding: .6rem 1.2rem;
+    display: inline-block;
+    border: 1px solid var(--cl-dark);
 }
 /* #endregion----------*/
 
 /* #region----------operation section*/
-#operation_section{
-    background-color: lightgreen;
-    height: 35rem;
+#operation_section h2{
+    padding-top: 8rem;
+    font-size: 2rem;
 }
-#operation_section div{
-    height: 10rem;
+#operation_section h3{
+    padding: 1.3rem 0;
+}
+#operation_section .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#operation_section img{
+    height: 20%;
 }
 /* #endregion----------*/
+
+/* #region----------teams*/
+#teams{
+    padding: 7rem 0;
+}
+#teams h2{
+    font-size: 2rem;
+    max-width: 35rem;
+}
+#teams a{
+    font-size: .8rem;
+}
+#teams h2,a{
+    padding: 2rem 0;
+}
+/* #endregion----------*/
+
 
 /* #region----------members*/
 #members{
