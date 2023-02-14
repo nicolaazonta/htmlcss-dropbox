@@ -254,27 +254,22 @@
 } 
 #faq li{
     padding: .5rem;
-    position: relative;
+    width: 100%;
 }
 #faq h2{
     padding: 2rem;
 }
-#faq li:first-child{
-    position: absolute;
-    left: 0;
-}
-#faq li:last-child{
-    position: absolute;
-    right: 0;
-}
+
 
 /* #endregion----------*/
-
-
 
 /* #region----------footer*/
-
+#app_footer{
+    
+}
 /* #endregion----------*/
+
+
 
 
 
