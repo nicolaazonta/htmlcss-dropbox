@@ -179,20 +179,27 @@
 
 /* #region----------card*/
 .card{
+   
+}
+.vertical_cards .card{
+    min-height: 55rem;
     flex-direction: column;
+    border: 1px solid var(--cl-bck__right_team_2);
 }
 .col_4 .card_header{
     text-align: center;
-    border: 1px solid var(--cl-bck__right_team_2);
+    border-bottom: 1px solid var(--cl-bck__right_team_2);
+}
+.card_header i{
+    font-size: .7rem;
 }
 .card_header i, span{
     padding: .4rem .2rem;
 }
 .col_4 .card .card_main{
-    border: 1px solid var(--cl-bck__right_team_2);
     padding: 1.5rem;
 }
-.card_main h3,p{
+.card_main h3{
     padding: .3rem 0;
 }
 .card_main .price{
@@ -201,18 +208,50 @@
 .card_main .users{
     display: flex;
 }
-.card_main i,p{
+.card_main>i,p{
     padding: .5rem .2rem;
 }
-.col_1 .card .card_header{
+.card_main i{
+    font-size: .7rem;
+    padding-top: .6rem;
+}
+.card_main .cta{
+    text-align: center;
+    width: 100%;
+    padding: .7rem 0;
+    margin: 2rem 0;
+}
+.divider{
+    border: 1px solid var(--cl-bck__right_team_2);
+    margin: 2rem 0;
+    width: 3em;
+}
+.important_points h5{
+    padding: .8rem 0;
+}
+.card_main .main_points{
+    padding: .2rem 0;
+}
+.main_points .fa-check{
+    color: #0061FF;
+}
+
+
+
+
+#orizontal_card .card{
+    height: 15rem;
+    border: 1px solid var(--cl-bck__right_team_2);
+    flex-direction: column;    
+}
+
+.col_12 .card .card_header{
     flex-basis: 2rem;
     height: 100%;
-    background-color:#61082B;
 }
-.col_1 .card .card_main{
+.col_12 .card .card_main{
     flex-basis: 10rem;
     height: 100%;
-    background-color: #A2D39B;
 }
 /* #endregion----------*/
 
