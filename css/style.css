@@ -15,6 +15,7 @@
     --cl-alternative_txt: #61082B;
     --cl-bck_teams_Designit: #F5F5F5;
     --cl-bck__left_team_1: #A2D39B;
+    --cl-border__business_cards: rgba(128, 128, 128, 0.751);
     --cl-bck__left_team_1_shadow: #D1E9CD;
     --cl-bck__left_team_2: #61082B;
     --cl-bck__left_team_3: #0093CE;
@@ -109,6 +110,11 @@
     flex-wrap: wrap;
     display: flex;
 }
+.divider{
+    border: 1px solid var(--cl-bck__right_team_2);
+    margin: 2rem 0;
+    width: 3em;
+}
 /* #endregion----------*/
 
 /* #region----------header-navbar*/
@@ -184,80 +190,79 @@
 }
 /* #endregion----------*/
 
-/* #region----------card*/
-.card{
-   
-}
-.vertical_cards .card{
-    min-height: 55rem;
-    flex-direction: column;
-    border: 1px solid var(--cl-bck__right_team_2);
-}
-.col_4 .card_header{
+/* #region----------COMMON business card*/
+#business_plans .card_header{
     text-align: center;
-    border-bottom: 1px solid var(--cl-bck__right_team_2);
+    border-bottom: 1px solid var(--cl-border__business_cards);
 }
-.card_header i{
+#business_plans .card{
+    border: 1px solid var(--cl-border__business_cards);
+    flex-direction: column;
+}
+#business_plans i{
     font-size: .7rem;
 }
-.card_header i, span{
+#business_plans i, span{
     padding: .4rem .2rem;
 }
-.col_4 .card .card_main{
-    padding: 1.5rem;
-}
-.card_main h3{
-    padding: .3rem 0;
-}
-.card_main .price{
-    font-weight: 700;
-}
-.card_main .users{
-    display: flex;
-}
-.card_main>i,p{
-    padding: .5rem .2rem;
-}
-.card_main i{
+#business_plans i{
     font-size: .7rem;
     padding-top: .6rem;
 }
-.card_main .cta{
+#business_plans .card_main{
+    padding: 1.5rem;
+}
+#business_plans h3{
+    padding: .3rem 0;
+}
+#business_plans .price{
+    font-weight: 700;
+}
+#business_plans .users{
+    display: flex;
+}
+#business_plans .main_points, .users{
+    padding: .2rem 0;
+    align-items: baseline;
+}
+#business_plans i,p{
+    padding: .5rem .2rem;
+}
+#business_plans .cta{
     text-align: center;
     width: 100%;
     padding: .7rem 0;
     margin: 2rem 0;
 }
-.divider{
-    border: 1px solid var(--cl-bck__right_team_2);
-    margin: 2rem 0;
-    width: 3em;
-}
-.important_points h5{
+#business_plans h5{
     padding: .8rem 0;
 }
-.card_main .main_points{
-    padding: .2rem 0;
+/* #endregion----------*/
+
+/* #region----------vertical business card*/
+#vertical_cards .card{
+    min-height: 100%;
 }
-.main_points .fa-check{
+#vertical_cards .fa-check{
     color: #0061FF;
 }
-#orizontal_card .card{
-    min-height: 11rem;
-    border: 1px solid var(--cl-bck__right_team_2);
-    flex-direction: column;    
-}
-.col_12 .card_header{
-    border-bottom: 1px solid var(--cl-bck__right_team_2);
-}
+/* #endregion----------*/
+
+/* #region----------orizontal business card*/
 #orizontal_card .right_side{
-    width: 40%;
+    width: 30%;
 }
-#orizontal_card .left_side,.right_side{
-    padding: 1.5rem;
+#orizontal_card .card{
+    min-height: 100%;    
+}
+#orizontal_card .card_main{
+    align-items: baseline;  
+}
+#orizontal_card .cta{
+    margin: 0;
 }
 .left_side :last-child{
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 /* #endregion----------*/
 
