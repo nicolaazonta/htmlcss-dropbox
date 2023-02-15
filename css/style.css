@@ -299,6 +299,9 @@
 #operation_section img{
     height: 20%;
 }
+#operation_section .card{
+    padding: 2rem 0;
+}
 /* #endregion----------*/
 
 /* #region----------teams*/
@@ -428,7 +431,7 @@
     padding: 2rem 0;
     font-weight: 400;
 }
-#faq .faq_row:active .faq_answer{
+#faq .faq_row:hover .faq_answer{
    display: initial;
 }
 
