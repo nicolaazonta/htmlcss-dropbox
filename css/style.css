@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    list-style: none;
 }
 
 :root{
@@ -14,6 +15,7 @@
     --cl-alternative_txt: #61082B;
     --cl-bck_teams_Designit: #F5F5F5;
     --cl-bck__left_team_1: #A2D39B;
+    --cl-bck__left_team_1_shadow: #D1E9CD;
     --cl-bck__left_team_2: #61082B;
     --cl-bck__left_team_3: #0093CE;
     --cl-bck__left_team_4: #FF1C1C;
@@ -81,6 +83,11 @@
     color: var(--cl-light);
     padding: .3rem .6rem;
     display: inline-block;
+}.cta_grey{
+    padding: .6rem 1.2rem;
+    display: inline-block;
+    border: 1px solid var(--cl-dark);
+    background-color: lightgray;
 }
 .container_65{
     width: 65%;
@@ -268,11 +275,7 @@
     padding-left: 3rem;
     padding-top: 3rem;
 }
-.cta_grey{
-    padding: .6rem 1.2rem;
-    display: inline-block;
-    border: 1px solid var(--cl-dark);
-}
+
 /* #endregion----------*/
 
 /* #region----------operation section*/
@@ -325,15 +328,25 @@
     justify-content: center;
     align-items: center;
 }
-#members img{
+#members #mem_center{
+    padding: 3rem;
+    background-color: var(--cl-bck_teams_Designit);
+}
+#mem_center img{
+    max-height: 20%;  
+}
+#mem_center .square_block{
+    flex-direction: column; 
+    justify-content: space-around; 
+}
+
+#mem_left img , #mem_right img{
     max-width: 8rem;
     filter: invert(1) sepia(1) saturate(1) hue-rotate(175deg);
 }
-object{
-    color: var(--cl-light);
-}
 #square_1{
     background-color: var(--cl-bck__left_team_1);
+    border: 1rem solid var(--cl-bck__left_team_1_shadow);
 }
 #square_2{
     background-color: var(--cl-bck__left_team_2);
@@ -365,23 +378,56 @@ object{
 
 /* #region----------call to action*/
 #call_to_action{
-    height: 10rem;
-    background-color: lightgoldenrodyellow;
+    background-color: var(--cl-bck_jumbo);
 } 
+#call_to_action div{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#call_to_action h2{
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 25rem;
+    color: var(--cl-alternative_txt);
+}
 /* #endregion----------*/
 
 /* #region----------faq*/
-#faq{
-    max-height: 20rem;
-    background-color: lightgreen;
+#faq .container_50{
+    padding: 5rem 0;
 } 
-#faq li{
-    padding: .5rem;
+#faq .faq_row{
+    font-weight: 700;
+    padding: 1.5rem 0;
     width: 100%;
+    border-top: 1px solid var(--cl-bck_jumbo);
+    border-bottom: 1px solid var(--cl-bck_jumbo);
 }
 #faq h2{
-    padding: 2rem;
+    padding: 3rem 0;
+    font-size: 2rem;
 }
+#faq .faq_question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#faq i{
+    padding-right: 2rem;
+    font-size: .8rem;
+}
+#faq .faq_answer{
+    display: none;
+    padding: 2rem 0;
+    font-weight: 400;
+}
+#faq .faq_row:active .faq_answer{
+   display: initial;
+}
+
+
 
 
 /* #endregion----------*/
