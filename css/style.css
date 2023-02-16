@@ -18,6 +18,7 @@
     --cl-bck__left_team_1: #A2D39B;
     --cl-border__business_cards: rgba(128, 128, 128, 0.751);
     --cl-border__divider: rgba(128, 128, 128, 0.751);
+    --cl-bck__navbar_hover: #B4D0E7;
     --cl-bck__left_team_1_shadow: #D1E9CD;
     --cl-bck__left_team_2: #61082B;
     --cl-bck__left_team_3: #0093CE;
@@ -140,16 +141,53 @@
     width: 100%;
     position: sticky;
 }
-#navbar p{
+#navbar a{
     margin: 1rem;
+    text-decoration: none;
+    color: var(--cl-dark);
+    padding: .8rem  .4rem;
 }
-
+#navbar .start{
+    color:var(--cl-light);
+    padding: .6rem .8rem;
+    border-radius: none;
+    transition:border-radius .5s;
+}
+#navbar .start:hover{
+    border-radius: .7rem;
+}
 #navbar .logo{
     height: 1.2rem;
 }
 .nav_left, .nav_right{
     width: 40%;
 }
+
+#navbar .plans,.functions,.why,.support,.contact,.login{
+    background-color: none;
+    border-radius: .5rem;
+    transition:background-color 1s;
+}
+#navbar .why:hover{
+    background-color: var(--cl-bck__navbar_hover);
+}
+#navbar .functions:hover{
+    background-color: var(--cl-bck__navbar_hover);
+}
+#navbar .plans:hover{
+    background-color: var(--cl-bck__navbar_hover);
+}
+#navbar .support:hover{
+    background-color: var(--cl-bck__navbar_hover);
+}
+#navbar .contact:hover{
+    background-color: var(--cl-bck__navbar_hover);
+}
+#navbar .login:hover{
+    background-color: var(--cl-bck__navbar_hover);
+}
+
+
 
 /* #endregion----------*/
 
@@ -449,9 +487,6 @@
     display: none;
 }
 /* #endregion----------*/
-
-
-
 
 /* #region----------footer*/
 #app_footer{
