@@ -115,10 +115,14 @@
 .divider_big{
     width: 8rem;
 }
+.cta:hover{
+    border-radius: .7rem;
+}
 .cta{
     display: inline-block;
+    border-radius: none;
     padding: .4rem .8rem;
-
+    transition:border-radius .5s;
 }
 .cta_blue{
     color: var(--cl-light);
@@ -163,15 +167,9 @@
 #navbar .nav_right{
     justify-content: flex-end;
 }
-#navbar .start{
-    color:var(--cl-light);
-    padding: .7rem .8rem;
-    border-radius: none;
-    transition:border-radius .5s;
-}
-#navbar .start:hover{
-    border-radius: .7rem;
-}
+#navbar .cta{
+    color:var(--cl-light);    
+} 
 #navbar .plans,.functions,.why,.support,.contact,.login{
     background-color: none;
     border-radius: .5rem;
@@ -285,7 +283,6 @@
     padding: .2rem 0;
     align-items: baseline;
 }
-
 #business_plans .cta{
     text-align: center;
     width: 100%;
