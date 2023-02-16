@@ -10,23 +10,23 @@
 :root{
     --cl-light: #FFFFFF;
     --cl-dark: #000000;
-    --cl-bck_jumbo: #B4D0E7;
-    --cl-bck_CTA_blue: #0061FF;
-    --cl-bck_CTA_light: #FFFFFF;
+    --cl-bg_jumbo: #B4D0E7;
+    --cl-bg_CTA_blue: #0061FF;
+    --cl-bg_CTA_light: #FFFFFF;
     --cl-alternative_txt: #61082B;
-    --cl-bck_teams_Designit: #F5F5F5;
-    --cl-bck__left_team_1: #A2D39B;
+    --cl-bg_teams_Designit: #F5F5F5;
+    --cl-bg__left_team_1: #A2D39B;
     --cl-border__business_cards: rgba(128, 128, 128, 0.751);
     --cl-border__divider: rgba(128, 128, 128, 0.751);
-    --cl-bck__navbar_hover: #B4D0E7;
-    --cl-bck__left_team_1_shadow: #D1E9CD;
-    --cl-bck__left_team_2: #61082B;
-    --cl-bck__left_team_3: #0093CE;
-    --cl-bck__left_team_4: #FF1C1C;
-    --cl-bck__right_team_5: #D5001F;
-    --cl-bck__right_team_6: #B4D0E7;
-    --cl-bck__right_team_7: #0D2481;
-    --cl-bck__right_team_8: #FFD830;
+    --cl-bg__navbar_hover: #B4D0E7;
+    --cl-bg__left_team_1_shadow: #D1E9CD;
+    --cl-bg__left_team_2: #61082B;
+    --cl-bg__left_team_3: #0093CE;
+    --cl-bg__left_team_4: #FF1C1C;
+    --cl-bg__right_team_5: #D5001F;
+    --cl-bg__right_team_6: #B4D0E7;
+    --cl-bg__right_team_7: #0D2481;
+    --cl-bg__right_team_8: #FFD830;
 }
 /* #endregion----------*/
 
@@ -34,14 +34,11 @@
 .d_flex{
     display: flex;
 }
-.justify_cent{
+.justify_center{
     justify-content: center;
 }
-.justify_betw{
+.justify_between{
     justify-content: space-between;
-}
-.justify_arou{
-    justify-content: space-around;
 }
 .align_it_center{
     align-items: center;
@@ -49,25 +46,25 @@
 .align_co_center{
     align-content: center;
 }
-.flex_wr{
+.flex_wrap{
     flex-wrap: wrap;
 }
 .justify_end{
     justify-content: flex-end;
 }
-.flex_clmn{
+.flex_column{
     flex-direction: column;
 }
-.pad_1r{
+.pad_1{
     padding: 1rem;
 }
-.pad_2r{
+.pad_2{
     padding: 2rem;
 }
-.pad_5r{
+.pad_5{
     padding: 5rem;
 }
-.pad_t2r{
+.pad_t2{
     padding-top: 2rem;
 }
 .pad_b5{
@@ -78,9 +75,6 @@
 }
 .dashed{
     border: dashed 2px blue;
-}
-.position_rel{
-    position: relative;
 }
 .container_65{
     width: 65%;
@@ -126,12 +120,12 @@
 }
 .cta_blue{
     color: var(--cl-light);
-    background-color: var(--cl-bck_CTA_blue);
+    background-color: var(--cl-bg_CTA_blue);
 }
 .cta_grey{
     color: var(--cl-dark);
     border: 1px solid var(--cl-dark);
-    background-color: var(--cl-bck_CTA_light);
+    background-color: var(--cl-bg_CTA_light);
 }
 /* #endregion----------*/
 
@@ -176,22 +170,22 @@
     transition:background-color 1s;
 }
 #navbar .why:hover{
-    background-color: var(--cl-bck__navbar_hover);
+    background-color: var(--cl-bg__navbar_hover);
 }
 #navbar .functions:hover{
-    background-color: var(--cl-bck__navbar_hover);
+    background-color: var(--cl-bg__navbar_hover);
 }
 #navbar .plans:hover{
-    background-color: var(--cl-bck__navbar_hover);
+    background-color: var(--cl-bg__navbar_hover);
 }
 #navbar .support:hover{
-    background-color: var(--cl-bck__navbar_hover);
+    background-color: var(--cl-bg__navbar_hover);
 }
 #navbar .contact:hover{
-    background-color: var(--cl-bck__navbar_hover);
+    background-color: var(--cl-bg__navbar_hover);
 }
 #navbar .login:hover{
-    background-color: var(--cl-bck__navbar_hover);
+    background-color: var(--cl-bg__navbar_hover);
 }
 
 
@@ -204,7 +198,7 @@
 }
 #app_main .jumbo_section{
     height: 36rem;
-    background-color: var(--cl-bck_jumbo);
+    background-color: var(--cl-bg_jumbo);
 }
 #jumbo{
     height: 23rem;
@@ -394,7 +388,7 @@
 }
 #members #mem_center{
     padding: 3rem 3rem 6rem 3rem;
-    background-color: var(--cl-bck_teams_Designit);
+    background-color: var(--cl-bg_teams_Designit);
 }
 #mem_center img{
     max-height: 20%;
@@ -411,35 +405,35 @@
     filter: invert(1) sepia(1) saturate(1) hue-rotate(175deg);
 }
 #square_1{
-    background-color: var(--cl-bck__left_team_1);
-    border: 1rem solid var(--cl-bck__left_team_1_shadow);
+    background-color: var(--cl-bg__left_team_1);
+    border: 1rem solid var(--cl-bg__left_team_1_shadow);
 }
 #square_2{
-    background-color: var(--cl-bck__left_team_2);
+    background-color: var(--cl-bg__left_team_2);
 }
 #square_3{
-    background-color: var(--cl-bck__left_team_3);
+    background-color: var(--cl-bg__left_team_3);
 }
 #square_4{
-    background-color: var(--cl-bck__left_team_4);
+    background-color: var(--cl-bg__left_team_4);
 }
 #square_5{
-    background-color: var(--cl-bck__right_team_5);
+    background-color: var(--cl-bg__right_team_5);
 }
 #square_6{
-    background-color: var(--cl-bck__right_team_6);
+    background-color: var(--cl-bg__right_team_6);
 }
 #square_7{
-    background-color: var(--cl-bck__right_team_7);
+    background-color: var(--cl-bg__right_team_7);
 }
 #square_8{
-    background-color: var(--cl-bck__right_team_8);
+    background-color: var(--cl-bg__right_team_8);
 }
 /* #endregion----------*/
 
 /* #region----------call to action*/
 #call_to_action{
-    background-color: var(--cl-bck_jumbo);
+    background-color: var(--cl-bg_jumbo);
 } 
 #call_to_action div{
     padding: 5rem 0;
@@ -463,8 +457,8 @@
     font-weight: 700;
     padding: 1.5rem 0;
     width: 100%;
-    border-top: 1px solid var(--cl-bck_jumbo);
-    border-bottom: 1px solid var(--cl-bck_jumbo);
+    border-top: 1px solid var(--cl-bg_jumbo);
+    border-bottom: 1px solid var(--cl-bg_jumbo);
 }
 #faq h2{
     padding: 3rem 0;
