@@ -144,10 +144,24 @@
     box-shadow: 0px 3px lightskyblue;
 }
 #navbar a{
-    margin: 1rem;
+    margin: .5rem;
     text-decoration: none;
     color: var(--cl-dark);
-    padding: .7rem  .4rem;
+    padding: .7rem .4rem;
+}
+.nav_left, .nav_right{
+    width: 40%;
+}
+#navbar .logo{
+    padding: .4rem .6rem;
+}
+#navbar .nav_left,.nav_right{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+#navbar .nav_right{
+    justify-content: flex-end;
 }
 #navbar .start{
     color:var(--cl-light);
@@ -157,12 +171,6 @@
 }
 #navbar .start:hover{
     border-radius: .7rem;
-}
-#navbar .logo{
-    height: 1.2rem;
-}
-.nav_left, .nav_right{
-    width: 40%;
 }
 #navbar .plans,.functions,.why,.support,.contact,.login{
     background-color: none;
@@ -364,9 +372,10 @@
 #teams a{
     font-size: .8rem;
 }
-#teams h2,a{
+#teams h2{
     padding: 2rem 0;
 }
+
 /* #endregion----------*/
 
 /* #region----------members*/
@@ -383,8 +392,11 @@
     justify-content: center;
     align-items: center;
 }
+#members .divider{
+    margin: 1rem 0;
+}
 #members #mem_center{
-    padding: 3rem;
+    padding: 3rem 3rem 6rem 3rem;
     background-color: var(--cl-bck_teams_Designit);
 }
 #mem_center img{
